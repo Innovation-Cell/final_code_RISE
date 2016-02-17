@@ -1,0 +1,8 @@
+<!--xml-->
+<launch>
+  <node name="VN200_INTERFACE" pkg="vectornav" type="vn200_interface" />
+     <param name="port" value="/dev/ttyUSB0"/>
+     <param name="baud" value="115200"/>
+  <node name="globalPath" pkg="globalpath" type="globalPath" />
+  <node name="gpsBearing" pkg="globalpath" type="gpsBearing" />
+</launch>

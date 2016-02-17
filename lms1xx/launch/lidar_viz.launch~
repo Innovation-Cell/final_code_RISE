@@ -1,0 +1,8 @@
+<launch>
+  <node pkg="tf" type="static_transform_publisher" name="odom" args="0.5 0.0 0.0 0.0 0.0 3.14 /laser /odom 10"/>
+
+
+
+  <node pkg="rviz" type="rviz" name="rviz" />
+
+</launch>

@@ -1,0 +1,8 @@
+<!--xml-->
+<launch>
+  <node pkg="videofeed" type="illum" name="illumination" output="screen"></node>
+  <node pkg="videofeed" type="igvc_IPM_1" name="IPM" output="screen"></node>
+  <node pkg="videofeed" type="lane_detect" name="lane_detection" output="screen"></node>
+  <node pkg="videofeed" type="interpolater" name="interpolation" output="screen"></node>
+  <node pkg="videofeed" type="occupancygrid" name="occ_grid" output="screen"></node>
+</launch>
